@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Css Assignment 2
+	</title>
+	<style type="text/css">
+		div
+		{
+			height:200px;
+			width:300px;
+			margin: 25px;
+			padding: 3px;
+			border:2px dotted red;
+			text-align: center;
+			color:white;
+		}
+		#myDiv
+		{
+			background: blue; 
+		    background: -webkit-linear-gradient(blue,green,red); 
+		    background: -o-linear-gradient(blue,green, red); 
+		    background: -moz-linear-gradient(blue,green, red);
+		    background: linear-gradient(blue,green,red);
+		    -webkit-transition-property: height,width;
+			-webkit-transition-duration: 2s;
+			-webkit-transition-timing-function: ease-in;
+			-moz-transition-property: height,width;
+			-moz-transition-duration: 2s;
+			-moz-transition-timing-function: ease-in;
+			-o-transition-property: height,width;
+			-o-transition-duration: 2s;
+			-o-transition-timing-function: ease-in;
+			position:absolute;
+			top:0px;
+			left:0px;
+		}
+		#myDiv2
+		{
+			background: blue; 
+		    background: -webkit-radial-gradient(blue,green,red); 
+		    background: -o-radial-gradient(blue,green,red); 
+		    background: -moz-radial-gradient(blue,green,red);
+		    background: radial-gradient(blue,green,red); 
+		    -webkit-transition-property: height,width;
+			-webkit-transition-duration: 2s;
+			-webkit-transition-timing-function: ease-out;
+			-moz-transition-property: height,width;
+			-moz-transition-duration: 2s;
+			-moz-transition-timing-function: ease-out;
+			-o-transition-property: height,width;
+			-o-transition-duration: 2s;
+			-o-transition-timing-function: ease-in;
+			position:absolute;
+			bottom:0px;
+			right:0px;
+		}
+		#myDiv:hover
+		{
+			height:400px;
+			width: 500px;
+			-webkit-animation-name:example;
+			animation-name:example;
+			-webkit-animation-duration:3s;
+			animation-duration:3s;
+		}
+		#myDiv2:hover
+		{
+			height:400px;
+			width: 500px;
+		   -webkit-animation-name:examplee;
+			animation-name:examplee;
+			-webkit-animation-duration:3s;
+			animation-duration:3s;
+		}
+		@-webkit-keyframes example 
+		{
+		    0%   {
+		    		background: -webkit-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-linear-gradient(#0000ff,#00ff00,#ff0000);
+				    background: linear-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    25% {
+		    		background: -webkit-linear-gradient(red,blue,green); 
+				    background: -o-linear-gradient(red,blue,green); 
+				    background: -moz-linear-gradient(red,blue,green);
+				    background: linear-gradient(red,blue,green);
+				}
+		    50% {
+		    		background: -webkit-linear-gradient(green,red,blue); 
+				    background: -o-linear-gradient(green,red,blue); 
+				    background: -moz-linear-gradient(green,red,blue);
+				    background: linear-gradient(green,red,blue);
+				}
+		    75% {
+		    		background: -webkit-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-linear-gradient(#0000ff,#00ff00,#ff0000);
+				    background: linear-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    100%{
+		    		background: -webkit-linear-gradient(red,blue,green); 
+				    background: -o-linear-gradient(red,blue,green); 
+				    background: -moz-linear-gradient(red,blue,green);
+				    background: linear-gradient(red,blue,green);
+				}
+			}
+
+		@keyframes example 
+		{
+    		0%   {
+		    		background: -webkit-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-linear-gradient(#0000ff,#00ff00,#ff0000);
+				    background: linear-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    25% {
+		    		background: -webkit-linear-gradient(red,blue,green); 
+				    background: -o-linear-gradient(red,blue,green); 
+				    background: -moz-linear-gradient(red,blue,green);
+				    background: linear-gradient(red,blue,green);
+				}
+		    50% {
+		    		background: -webkit-linear-gradient(green,red,blue); 
+				    background: -o-linear-gradient(green,red,blue); 
+				    background: -moz-linear-gradient(green,red,blue);
+				    background: linear-gradient(green,red,blue);
+				}
+		    75% {
+		    		background: -webkit-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-linear-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-linear-gradient(#0000ff,#00ff00,#ff0000);
+				    background: linear-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    100%{
+		    		background: -webkit-linear-gradient(red,blue,green); 
+				    background: -o-linear-gradient(red,blue,green); 
+				    background: -moz-linear-gradient(red,blue,green);
+				    background: linear-gradient(red,blue,green);
+				}
+		}
+		@-webkit-keyframes examplee
+		{
+		   0%   {
+		    		background: -webkit-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-radial-gradient(#0000ff,#00ff00,#ff0000);
+				    background: radial-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    25% {
+		    		background: -webkit-radial-gradient(red,blue,green); 
+				    background: -o-radial-gradient(red,blue,green); 
+				    background: -moz-radial-gradient(red,blue,green);
+				    background: radial-gradient(red,blue,green);
+				}
+		    50% {
+		    		background: -webkit-radial-gradient(green,red,blue); 
+				    background: -o-radial-gradient(green,red,blue); 
+				    background: -moz-radial-gradient(green,red,blue);
+				    background: radial-gradient(green,red,blue);
+				}
+		    75% {
+		    		background: -webkit-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-radial-gradient(#0000ff,#00ff00,#ff0000);
+				    background: radial-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    100%{
+		    		background: -webkit-radial-gradient(red,blue,green); 
+				    background: -o-radial-gradient(red,blue,green); 
+				    background: -moz-radial-gradient(red,blue,green);
+				    background: radial-gradient(red,blue,green);
+				}
+
+		}
+
+		@keyframes examplee 
+		{
+    		0%   {
+		    		background: -webkit-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-radial-gradient(#0000ff,#00ff00,#ff0000);
+				    background: radial-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    25% {
+		    		background: -webkit-radial-gradient(red,blue,green); 
+				    background: -o-radial-gradient(red,blue,green); 
+				    background: -moz-radial-gradient(red,blue,green);
+				    background: radial-gradient(red,blue,green);
+				}
+		    50% {
+		    		background: -webkit-radial-gradient(green,red,blue); 
+				    background: -o-radial-gradient(green,red,blue); 
+				    background: -moz-radial-gradient(green,red,blue);
+				    background: radial-gradient(green,red,blue);
+				}
+		    75% {
+		    		background: -webkit-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -o-radial-gradient(#0000ff,#00ff00,#ff0000); 
+				    background: -moz-radial-gradient(#0000ff,#00ff00,#ff0000);
+				    background: radial-gradient(#0000ff,#00ff00,#ff0000);
+				}
+		    100%{
+		    		background: -webkit-radial-gradient(red,blue,green); 
+				    background: -o-radial-gradient(red,blue,green); 
+				    background: -moz-radial-gradient(red,blue,green);
+				    background: radial-gradient(red,blue,green);
+				}
+		}
+	</style>
+</head>
+<body>
+	<div id="myDiv">
+		<h3>This is <b>MY</b> division 1.</h3>
+	</div>
+	<div id="myDiv2">
+		<h3>This is <b>MY</b> division 2.</h3>
+	</div>
+</body>
+</html>
